@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = ["LeeSeongHyun <leesh7248@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.94.1"
+uvicorn = "^0.21.0"
+sqlalchemy = "^2.0.6"
+passlib = "^1.7.4"
+flake8 = "^6.0.0"
+black = "^23.1.0"
+python-jose = "^3.3.0"
+python-dotenv = "^1.0.0"
+pymysql = "^1.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,8 +1,13 @@
-import os
-import openai
+"""
+OPENAI API 사용 테스트
+"""
 
-openai.organization = os.environ["OPENAI_ORGANIZATION"]
-openai.api_key = os.environ["OPENAI_API_KEY"]
+
+import openai
+from app.core.config import settings
+
+openai.organization = settings.OPENAI_ORG
+openai.api_key = settings.OPENAI_API_KEY
 # print(f"MODEL 갯수: {len(openai.Model.list())}")
 # print(f"Model: {openai.Model.list()}")
 
